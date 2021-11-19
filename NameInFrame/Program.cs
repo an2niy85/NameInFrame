@@ -18,23 +18,12 @@ namespace NameInFrame
             Console.WriteLine("Введите символ рамки");
             symbolFrame = Convert.ToChar(Console.ReadLine());
 
-            Console.Clear();
-            for (int i = 0; i <= someName.Length + 1; i++)
-            {
-                for (int j = 0; j <= 2; j++)
-                {
-                    Console.SetCursorPosition(i, j);
-                    if (i >=1 && i <=someName.Length && j == 1)
-                    {
-                        Console.Write(someName[i - 1]);
-                    }
-                    else
-                    {
-                        Console.Write(symbolFrame);
-                    }
-                    
-                }
-            }
+            Console.WriteLine();
+            for (int i = 0; i <= someName.Length + 1; i++) {
+                Console.Write(symbolFrame);}
+            Console.WriteLine("\n" + symbolFrame + someName + symbolFrame);
+            for (int i = 0; i <= someName.Length + 1; i++) {
+                Console.Write(symbolFrame);}
             Console.ReadLine();
         }
     }
